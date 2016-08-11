@@ -1,0 +1,23 @@
+#include <stdio.h>
+char* strcat1(char *n, char *t)
+{
+   while(*n++ != '\0');
+   while(*t++ != '\0')
+   {
+      *n = *t;
+       n++;
+   }
+   *n = '\0';
+   return n;
+}
+int main()
+{
+    char *s = "Hello";
+    char *t = "hello";
+    *s = strcat1(s, t);
+    while(*s != '\0')
+    {
+        printf("%c", *s++);
+    }
+    return 0;
+}
