@@ -976,5 +976,5 @@ echo $x
  
  command => echo $HOME `date`
  
-
+printf("wrong command")
 
